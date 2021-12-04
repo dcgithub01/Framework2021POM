@@ -26,11 +26,16 @@
 				</classes>
 			</test> -->
 				
-			<test name="Trash page test">
+				<test name="login page test">
+		<classes>
+			<class name="com.qa.box.tests.LoginPageTest" />
+				</classes>
+			</test>
+			<!-- <test name="Trash page test">
 		<classes>
 			<class name="com.qa.box.tests.TrashPageTest" />
 				</classes>
-			</test>
+			</test> -->
 			
 
 	<!-- <test name="home page test">
