@@ -28,6 +28,7 @@ public class AllPages extends BasePage {
 	By createBtn= By.cssSelector("button[data-resin-target='primarybutton']");
 	By closeConfirmationMsgIcon= By.xpath("//button[@class='close-btn']"); 
 	By CollectionsHyperlink=By.cssSelector(".MyCollectionsNavItem-label");
+	By trashHyerlink = By.cssSelector("a[data-resin-target='trash']");
 	
 	
 	public AllPages(WebDriver driver) {
@@ -84,6 +85,14 @@ public class AllPages extends BasePage {
 		elementUtil.waitforVisibilityOfElement(CollectionsHyperlink, 10);
 		elementUtil.doClick(CollectionsHyperlink);
 		return new MyCollectionPage(driver);
+	}
+	
+	
+	public TrashPage navigateToTrashPage()
+	{   
+		elementUtil.waitforVisibilityOfElement(trashHyerlink, 10);
+		elementUtil.doClick(trashHyerlink);
+		return new TrashPage(driver);
 	}
 	
 

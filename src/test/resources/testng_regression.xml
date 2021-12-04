@@ -15,13 +15,23 @@
 
 	</listeners> -->
 
-	<test name="all page test">
+	<!-- <test name="all page test">
 		<classes>
-		<!-- 	<class name="com.qa.box.tests.LoginPageTest" /> -->
 			<class name="com.qa.box.tests.AllPagesTest" />
-			<class name="com.qa.box.tests.MyCollectionPageTest" />
 				</classes>
 			</test>
+			<test name="Collection page test">
+		<classes>
+			<class name="com.qa.box.tests.MyCollectionPageTest" />
+				</classes>
+			</test> -->
+				
+			<test name="Trash page test">
+		<classes>
+			<class name="com.qa.box.tests.TrashPageTest" />
+				</classes>
+			</test>
+			
 
 	<!-- <test name="home page test">
 		<parameter name ="browser" value ="firefox" />

@@ -23,7 +23,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BasePage {
  WebDriver driver;
-//public ElementUtils elementUtil;
+public ElementUtils elementUtil;
 	public Properties prop;
 	public static ThreadLocal<WebDriver> tldriver= new ThreadLocal<WebDriver>();
 	
